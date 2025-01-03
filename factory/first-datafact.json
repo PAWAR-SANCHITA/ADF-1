@@ -1,0 +1,9 @@
+{
+	"name": "first-datafact",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "693578dd-9c63-42c0-8ef0-a1fe2001f1ef",
+		"tenantId": "a65e6cf0-4ee0-4270-9915-0660492d40a2"
+	}
+}
