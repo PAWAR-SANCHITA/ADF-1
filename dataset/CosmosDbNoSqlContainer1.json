@@ -1,0 +1,125 @@
+{
+	"name": "CosmosDbNoSqlContainer1",
+	"properties": {
+		"description": "Device",
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"device_id": {
+					"type": "string"
+				},
+				"device_status": {
+					"type": "string"
+				},
+				"last_update_date": {
+					"type": "string"
+				},
+				"last_txn_type": {
+					"type": "string"
+				},
+				"device_deleted": {
+					"type": "boolean"
+				},
+				"demographics": {
+					"type": "object",
+					"properties": {
+						"device_type": {
+							"type": "string"
+						},
+						"creation_date": {
+							"type": "string"
+						}
+					}
+				},
+				"current_status": {
+					"type": "object",
+					"properties": {
+						"alloc_status": {
+							"type": "boolean"
+						},
+						"project_info": {
+							"type": "object",
+							"properties": {
+								"project": {
+									"type": "string"
+								},
+								"system": {
+									"type": "string"
+								},
+								"grid": {
+									"type": "string"
+								},
+								"platforms": {
+									"type": "null"
+								}
+							}
+						},
+						"key_change_reqd": {
+							"type": "boolean"
+						},
+						"last_key_change_dt": {
+							"type": "null"
+						},
+						"device_status_maint": {
+							"type": "string"
+						}
+					}
+				},
+				"current_keys": {
+					"type": "object",
+					"properties": {
+						"primary_connstr": {
+							"type": "string"
+						},
+						"secondary_connstr": {
+							"type": "string"
+						},
+						"primary_sas_token": {
+							"type": "string"
+						},
+						"secondary_sas_token": {
+							"type": "string"
+						}
+					}
+				},
+				"transactions": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"txn_id": {
+								"type": "string"
+							},
+							"txn_date": {
+								"type": "string"
+							},
+							"txn_type": {
+								"type": "string"
+							},
+							"txn_fields": {
+								"type": "object",
+								"properties": {
+									"device_id": {
+										"type": "string"
+									},
+									"device_type": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "Device"
+		}
+	}
+}
