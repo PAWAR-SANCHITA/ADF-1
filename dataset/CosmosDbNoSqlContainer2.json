@@ -1,0 +1,16 @@
+{
+	"name": "CosmosDbNoSqlContainer2",
+	"properties": {
+		"description": "Device1 destination",
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql4for3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "Device1"
+		}
+	}
+}
