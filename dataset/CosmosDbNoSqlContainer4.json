@@ -1,0 +1,16 @@
+{
+	"name": "CosmosDbNoSqlContainer4",
+	"properties": {
+		"description": "destination",
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql5for4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "Projects1"
+		}
+	}
+}
