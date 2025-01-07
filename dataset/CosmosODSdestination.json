@@ -1,0 +1,15 @@
+{
+	"name": "CosmosODSdestination",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosforodsDES",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "ods_detail_wps1"
+		}
+	}
+}

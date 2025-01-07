@@ -1,0 +1,60 @@
+{
+	"name": "CosmosODSsource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosforOds",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"ods_date": {
+					"type": "string"
+				},
+				"data_isdeleted": {
+					"type": "string"
+				},
+				"detail_type": {
+					"type": "string"
+				},
+				"detail_data": {
+					"type": "object",
+					"properties": {
+						"project_id": {
+							"type": "string"
+						},
+						"project_status_das": {
+							"type": "string"
+						},
+						"project_active_today": {
+							"type": "string"
+						},
+						"project_calls_today": {
+							"type": "integer"
+						},
+						"project_errors_today": {
+							"type": "integer"
+						},
+						"device_id": {
+							"type": "string"
+						},
+						"device_active_today": {
+							"type": "string"
+						},
+						"device_calls_today": {
+							"type": "integer"
+						},
+						"device_errors_today": {
+							"type": "integer"
+						}
+					}
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "ods_detail_wps"
+		}
+	}
+}
