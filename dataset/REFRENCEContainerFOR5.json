@@ -1,0 +1,16 @@
+{
+	"name": "REFRENCEContainerFOR5",
+	"properties": {
+		"description": "Description",
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql7for6",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "References1"
+		}
+	}
+}
