@@ -1,0 +1,15 @@
+{
+	"name": "ods_detail_wps2for1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ods_detail_wps2for1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "ods_detail_wps1"
+		}
+	}
+}
