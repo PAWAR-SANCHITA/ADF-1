@@ -1,0 +1,54 @@
+{
+	"name": "newcosmodata31",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "newcosmodata31",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"data_date": {
+					"type": "string"
+				},
+				"data_isdeleted": {
+					"type": "string"
+				},
+				"last_update_date": {
+					"type": "string"
+				},
+				"total_msgs": {
+					"type": "integer"
+				},
+				"valid_msgs": {
+					"type": "integer"
+				},
+				"invalid_msgs": {
+					"type": "integer"
+				},
+				"error_msgs": {
+					"type": "integer"
+				},
+				"blob_summary": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"blob_name": {
+								"type": "string"
+							},
+							"blob_lines": {
+								"type": "integer"
+							}
+						}
+					}
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "new-cosmo-data3"
+		}
+	}
+}
