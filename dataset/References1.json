@@ -1,0 +1,31 @@
+{
+	"name": "References1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "References1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Type": {
+					"type": "string"
+				},
+				"Language": {
+					"type": "string"
+				},
+				"Number": {
+					"type": "string"
+				},
+				"Position": {
+					"type": "string"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "References1"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"name": "References2for1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "References2for1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "References1"
+		}
+	}
+}
