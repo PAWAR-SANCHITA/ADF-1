@@ -1,0 +1,15 @@
+{
+	"name": "Device2for1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Device2for1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "Device1"
+		}
+	}
+}
