@@ -1,0 +1,130 @@
+{
+	"name": "Projects1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Projects1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"project_id": {
+					"type": "string"
+				},
+				"project_number": {
+					"type": "string"
+				},
+				"project_isdeleted": {
+					"type": "string"
+				},
+				"project_name": {
+					"type": "string"
+				},
+				"project_type": {
+					"type": "string"
+				},
+				"project_subtype": {
+					"type": "string"
+				},
+				"project_model": {
+					"type": "string"
+				},
+				"project_location": {
+					"type": "string"
+				},
+				"project_loc_lat": {
+					"type": "string"
+				},
+				"project_loc_lang": {
+					"type": "string"
+				},
+				"project_pluscode": {
+					"type": "string"
+				},
+				"project_city": {
+					"type": "string"
+				},
+				"project_region": {
+					"type": "string"
+				},
+				"project_comm_date_YMD": {
+					"type": "string"
+				},
+				"project_status_lifecycle": {
+					"type": "string"
+				},
+				"project_status_working": {
+					"type": "string"
+				},
+				"project_status_das": {
+					"type": "string"
+				},
+				"project_status_maint": {
+					"type": "string"
+				},
+				"project_status_block": {
+					"type": "string"
+				},
+				"last_update_date": {
+					"type": "string"
+				},
+				"creation_date": {
+					"type": "string"
+				},
+				"project_transactions": {
+					"type": "array"
+				},
+				"project_devices": {
+					"type": "array"
+				},
+				"transactions": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "string"
+							},
+							"txn_type": {
+								"type": "string"
+							},
+							"txn_date": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"project_status_alcalc": {
+					"type": "string"
+				},
+				"project_sol_doc": {
+					"type": "object",
+					"properties": {
+						"doc_file_name": {
+							"type": "string"
+						},
+						"doc_blob_name": {
+							"type": "string"
+						}
+					}
+				},
+				"project_sys_doc": {
+					"type": "object",
+					"properties": {
+						"doc_file_name": {
+							"type": "string"
+						},
+						"doc_blob_name": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "Projects1"
+		}
+	}
+}
