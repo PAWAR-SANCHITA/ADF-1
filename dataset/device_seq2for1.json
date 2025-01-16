@@ -1,0 +1,15 @@
+{
+	"name": "device_seq2for1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "device_seq_no2for1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "device_seq_no"
+		}
+	}
+}
