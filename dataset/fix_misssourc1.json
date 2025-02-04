@@ -1,0 +1,40 @@
+{
+	"name": "fix_misssourc1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "fix_misssource1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"user_id": {
+					"type": "string"
+				},
+				"username": {
+					"type": "string"
+				},
+				"full_name": {
+					"type": "string"
+				},
+				"email": {
+					"type": "string"
+				},
+				"disabled": {
+					"type": "boolean"
+				},
+				"mobile_contact": {
+					"type": "string"
+				},
+				"alt_contact": {
+					"type": "string"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "User"
+		}
+	}
+}
