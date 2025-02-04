@@ -1,0 +1,15 @@
+{
+	"name": "fix_missUserProjRole1for2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "fix_missUserProjRole1for2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "UserProjRole"
+		}
+	}
+}

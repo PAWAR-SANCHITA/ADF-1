@@ -1,0 +1,48 @@
+{
+	"name": "fix_missUserProjRole1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "fix_missUserProjRole1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"user_id": {
+					"type": "string"
+				},
+				"project_id": {
+					"type": "string"
+				},
+				"alloc_date": {
+					"type": "null"
+				},
+				"last_update_date": {
+					"type": "null"
+				},
+				"is_active": {
+					"type": "string"
+				},
+				"usrprj_roles": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"role_type": {
+								"type": "string"
+							},
+							"role": {
+								"type": "string"
+							}
+						}
+					}
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "UserProjRole"
+		}
+	}
+}
