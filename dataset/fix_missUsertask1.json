@@ -1,0 +1,64 @@
+{
+	"name": "fix_missUsertask1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "fix_missUserTask1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"user_id": {
+					"type": "string"
+				},
+				"task_name": {
+					"type": "string"
+				},
+				"task_type_id": {
+					"type": "string"
+				},
+				"time_instance_id": {
+					"type": "string"
+				},
+				"last_update_date": {
+					"type": "string"
+				},
+				"task_enabled": {
+					"type": "string"
+				},
+				"task_param": {
+					"type": "object",
+					"properties": {
+						"task_type_id": {
+							"type": "string"
+						},
+						"task_act_params": {
+							"type": "object",
+							"properties": {
+								"taskparam_type_id": {
+									"type": "string"
+								},
+								"project_list": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"proj_id": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "UserTask"
+		}
+	}
+}
